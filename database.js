@@ -8,4 +8,8 @@ db.serialize(() => {
   db.run(
     "CREATE TABLE data (TransactionId INT, Status TEXT, Type TEXT, ClientName TEXT, Amount REAL)"
   );
+
+  db.run(
+    "CREATE TABLE users ( Id INTEGER PRIMARY KEY AUTOINCREMENT, Username TEXT NOT NULL UNIQUE, Password TEXT NOT NULL, Email TEXT NOT NULL UNIQUE, Created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)"
+  );
 });
