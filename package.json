@@ -23,6 +23,7 @@
     "nodemailer": "^6.9.14",
     "nodemon": "^3.1.4",
     "sqlite3": "^5.1.7",
-    "stream": "^0.0.3"
+    "stream": "^0.0.3",
+    "util.promisify": "^1.1.2"
   }
 }
